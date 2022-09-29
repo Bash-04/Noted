@@ -1,0 +1,111 @@
+:root{
+    --gray: rgb(151, 151, 151);
+    --darkgray: rgb(90, 90, 90);
+}
+
+/*Sidebalk*/
+.sidebalk{
+    /* background-color: rgba(0, 0, 0, 0.034); */
+    min-width: 0px;
+    width: 230px;
+    max-width: 100%;
+    border-right: 1px solid #00000033;
+}
+.sidebalk #profile{
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 6px;
+}
+.sidebalk #profile img{
+    margin-right: 6px;
+    height: 32px;
+    width: 32px;
+    max-width: 32px;
+    max-height: 32px;
+}
+.sidebalk #profile h1{
+    margin-top: 2px;
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    width: fit-content;
+}
+.sidebalk #sidemap{
+    margin: 20px 6px;
+}
+.sidebalk #sidemap li{
+    display: flex;
+    align-items: center;
+}
+.sidebalk #sidemap li img{
+    width: 25px;
+    height: 25px;
+}
+.sidebalk #sidemap li p{
+    color: var(--darkgray);
+    font-size: smaller;
+    font-weight: 500;
+}
+.sidebalk #sidemap hr{
+    background-color: var(--darkgray);
+    color: var(--darkgray);
+    margin-top: 6px;
+    height: .5px;
+}
+
+.sidebalk #files{
+    margin: 3px;
+}
+.sidebalk #files ul li{
+    margin-left: 8px;
+}
+
+/*Navbalk*/
+.navbalk{
+    min-height: 6vh;
+    padding: 2px;
+}
+.navbalk ul{
+    margin-top: 6px;
+    margin-bottom: 3px;
+    display: flex;
+}
+.navbalk ul #par{
+    margin: 3px -2px 3px 7px;
+}
+.navbalk ul #par2{
+    color: var(--gray);
+    font-size: large;
+    padding: 3px;
+    margin: 3px;
+}
+.navbalk li{
+    align-items: center;
+    display: flex;
+    padding: 3px;
+    margin: 3px 7px 3px 5px;
+    text-decoration: none;
+    list-style-type: none;
+    width: fit-content;
+    height: fit-content;
+}
+.navbalk li a:hover{
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 3px;
+    margin-top: -4px;
+    margin-right: -8px;
+    margin-bottom: -3px;
+}
+.navbalk li img{
+    width: 18px;
+    height: 18px;
+}
+.navbalk p{
+    user-select: none;
+    cursor: default;
+    margin-left: 3px;
+}

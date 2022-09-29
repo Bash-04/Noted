@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" consent="with=device-width, initial-scale=1">
-        <title>Noted</title>
-        <link rel="stylesheet" href="./src/css/style.css">        
+        <title>WalNote</title>
+        <link rel="stylesheet" href="./src/css/general.css">
+        <link rel="stylesheet" href="./src/css/nav.css">
+        <link rel="icon" href="./src/assets/icons/84523052-walnoot-lineaire-pictogram-hazelnoot-moer-dunne-lijn-illustratie-herfst-seizoen-contour-symbool-vect.webp">
     </head>
     <body>
-        <h1>Hello, World!</h1>
+        <noscript>Please activate JavaScript in your browser settings to functionally use Noted
+            <hr>
+        </noscript>
+        <section :root class="main">
+            <section class="sidebalk">
+                <div id="profile">
+                    <img src="./src/assets/icons/84523052-walnoot-lineaire-pictogram-hazelnoot-moer-dunne-lijn-illustratie-herfst-seizoen-contour-symbool-vect.webp">
+                    <h1>Bas Bakens</h1>
+                </div>
+                <div id="sidemap">
+                    <ul>
+                        <li>
+                            <img src="./src/assets/icons/magnifying-glass-icon-search-loupe-lens-glass-magnifier-find-zoom-sign-icon-free-free-vector.webp">
+                            <p>Search</p>
+                        </li>
+                        <hr>
+                        <div id="files">
+                        <ul>
+                            <p>Folder</p>
+                            <li>Note</li>
+                        </ul>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section class="middenstuk">
+            <section class="navbalk">
+                <ul>
+                    <p id="par">➤</p>
+                    <li>
+                        <a>Folder</a>
+                    </li>
+                    <p id="par2">/</p>
+                    <li>
+                        <a>Note</a>
+                    </li>
+                </ul>
+            </section>
+                <section class="textspace">
+                    <textarea id="customTextarea"></textarea>
+                </section>
+            </section>
+        </section>
     </body>
 </html>
