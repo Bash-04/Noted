@@ -73,7 +73,7 @@
     display: flex;
 }
 .navbalk ul #par{
-    margin: 3px -2px 3px 7px;
+    margin: 4px -2px 3px 7px;
 }
 .navbalk ul #par2{
     color: var(--gray);
@@ -84,7 +84,7 @@
 .navbalk li{
     align-items: center;
     display: flex;
-    padding: 3px;
+    padding: 4px 8px 3px 5px;
     margin: 3px 7px 3px 5px;
     text-decoration: none;
     list-style-type: none;
@@ -97,8 +97,9 @@
     border-radius: 8px;
     padding: 3px;
     margin-top: -4px;
-    margin-right: -8px;
+    margin-right: -4px;
     margin-bottom: -3px;
+    margin-left: -4px;
 }
 .navbalk li img{
     width: 18px;
