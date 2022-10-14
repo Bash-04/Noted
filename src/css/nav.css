@@ -43,7 +43,11 @@
     width: 25px;
     height: 25px;
 }
-.sidebalk #sidemap li p{
+.sidebalk #sidemap li input{
+    height: 20px;
+    width: 150px;
+    border: 1px solid var(--darkgray);
+    border-radius: 4px;
     color: var(--darkgray);
     font-size: smaller;
     font-weight: 500;
@@ -55,11 +59,44 @@
     height: .5px;
 }
 
+.sidebalk #newNote{
+    padding: 3px;
+    margin-left: 10px;
+    height: 25px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.sidebalk #newNote img{
+    height: 15px;
+    width: 15px;
+    margin: 0px 6px -3px 0px;
+}
+.sidebalk #newNote:hover{
+    margin-top: 1px;
+    margin-left: 10px;
+    height: 24px;
+    width: 118px;
+}
+
 .sidebalk #files{
     margin: 3px;
 }
-.sidebalk #files ul li{
+.sidebalk #files ul button{
+    font-size: 16px;
+    padding: 1px;
+    border: none;
+    display: flex;
+    align-items: center;
     margin-left: 8px;
+}
+.sidebalk #files ul button:hover{
+    padding: 2px;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: -2px;
 }
 
 /*Navbalk*/
