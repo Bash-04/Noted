@@ -2,102 +2,123 @@ var i = 0;
 
 var activeTextarea = document.getElementById("active");
 
-var activeNoDisplay = document.getElementById("active").style.display = "none;";
-
 // nog fixen!!!
 function openNote1(){
+    closeAllNotes();
     const textarea = document.querySelectorAll("textarea");
     const currentTextarea = textarea[0];
 
     const noteFile = document.getElementById("noteFile1");
 
     if(noteFile != document.getElementById("current-note").innerText){
-        document.getElementsByName("TextareaNote-1").setAttribute("id", "active");
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
         document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
 
 function openNote2(){
-    const note = document.querySelectorAll("textarea");
-    const currentTextarea = note[1];
+    closeAllNotes();
+    const textarea = document.querySelectorAll("textarea");
+    const currentTextarea = textarea[1];
 
-    document.getElementById("TextareaNote-1").setAttribute("id", "active");
+    const noteFile = document.getElementById("noteFile2");
 
-    if(currentTextarea != activeTextarea){
-        currentTextarea.style.display = "block;"
+    if(noteFile != document.getElementById("current-note").innerText){
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
+        document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
 
 function openNote3(){
-    const note = document.querySelectorAll("textarea");
-    const currentTextarea = note[2];
+    closeAllNotes();
+    const textarea = document.querySelectorAll("textarea");
+    const currentTextarea = textarea[2];
 
-    document.getElementById("TextareaNote-1").setAttribute("id", "active");
+    const noteFile = document.getElementById("noteFile3");
 
-    if(currentTextarea != activeTextarea){
-        currentTextarea.style.display = "block;"
+    if(noteFile != document.getElementById("current-note").innerText){
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
+        document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
 
 function openNote4(){
-    const note = document.querySelectorAll("textarea");
-    const currentTextarea = note[3];
+    closeAllNotes();
+    const textarea = document.querySelectorAll("textarea");
+    const currentTextarea = textarea[3];
 
-    document.getElementById("TextareaNote-1").setAttribute("id", "active");
+    const noteFile = document.getElementById("noteFile4");
 
-    if(currentTextarea != activeTextarea){
-        currentTextarea.style.display = "block;"
+    if(noteFile != document.getElementById("current-note").innerText){
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
+        document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
 
 function openNote5(){
-    const note = document.querySelectorAll("textarea");
-    const currentTextarea = note[4];
+    closeAllNotes();
+    const textarea = document.querySelectorAll("textarea");
+    const currentTextarea = textarea[4];
 
-    document.getElementById("TextareaNote-1").setAttribute("id", "active");
+    const noteFile = document.getElementById("noteFile5");
 
-    if(currentTextarea != activeTextarea){
-        currentTextarea.style.display = "block;"
+    if(noteFile != document.getElementById("current-note").innerText){
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
+        document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
 
 function openNote6(){
-    const note = document.querySelectorAll("textarea");
-    const currentTextarea = note[5];
+    closeAllNotes();
+    const textarea = document.querySelectorAll("textarea");
+    const currentTextarea = textarea[5];
 
-    document.getElementById("TextareaNote-1").setAttribute("id", "active");
+    const noteFile = document.getElementById("noteFile6");
 
-    if(currentTextarea != activeTextarea){
-        currentTextarea.style.display = "block;"
+    if(noteFile != document.getElementById("current-note").innerText){
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
+        document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
 
 function openNote7(){
-    const note = document.querySelectorAll("textarea");
-    const currentTextarea = note[6];
+    closeAllNotes();
+    const textarea = document.querySelectorAll("textarea");
+    const currentTextarea = textarea[6];
 
-    document.getElementById("TextareaNote-1").setAttribute("id", "active");
+    const noteFile = document.getElementById("noteFile7");
 
-    if(currentTextarea != activeTextarea){
-        currentTextarea.style.display = "block;"
+    if(noteFile != document.getElementById("current-note").innerText){
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
+        document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
 
 function openNote8(){
-    const note = document.querySelectorAll("textarea");
-    const currentTextarea = note[7];
+    closeAllNotes();
+    const textarea = document.querySelectorAll("textarea");
+    const currentTextarea = textarea[7];
 
-    document.getElementById("TextareaNote-1").setAttribute("id", "active");
+    const noteFile = document.getElementById("noteFile8");
 
-    if(currentTextarea != activeTextarea){
-        currentTextarea.style.display = "block;"
+    if(noteFile != document.getElementById("current-note").innerText){
+        currentTextarea.setAttribute("id", "active");
+        document.getElementById("active").style = "display: block;";
+        document.getElementById("current-note").innerText = noteFile.innerText;
     }
     loadActiveTextarea();
 }
