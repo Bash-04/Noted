@@ -1,5 +1,3 @@
-var i = 0;
-
 var activeTextarea = document.getElementById("active");
 
 // nog fixen!!!
@@ -125,13 +123,14 @@ function openNote8(){
 
 function loadActiveTextarea()
     {
+    var i = 0;
     const note = document.querySelectorAll("textarea");
     const currentTextarea = note[i];
 
     for (i < 8; i++;){
-        if(currentTextarea == activeTextarea && activeTextarea == activeNoDisplay)
+        if(currentTextarea == activeTextarea)
         {
-            currentTextarea.style.display = "block;"
+            currentTextarea.style = "display: block;"
         }
     }
     i = 0;
