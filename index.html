@@ -6,10 +6,12 @@
         <title>WalNote</title>
         <link rel="stylesheet" href="./src/css/general.css">
         <link rel="stylesheet" href="./src/css/nav.css">
+        <link rel="stylesheet" href="./src/css/settings.css">
         <link rel="icon" href="./src/assets/icons/84523052-walnoot-lineaire-pictogram-hazelnoot-moer-dunne-lijn-illustratie-herfst-seizoen-contour-symbool-vect.webp">
         <script src="./src/function/addNote.js"></script>
         <script src="./src/function/openNote.js"></script>
         <script src="./src/function/closeNote.js"></script>
+        <script src="./src/function/settings.js"></script>
     </head>
     <body>
         <noscript>Please activate JavaScript in your browser settings to functionally use Noted
@@ -27,23 +29,32 @@
                             <img src="./src/assets/icons/magnifying-glass-icon-search-loupe-lens-glass-magnifier-find-zoom-sign-icon-free-free-vector.webp">
                             <input id="search" type="search" placeholder="search...">
                         </li>
-                        <hr>
-                        <div id="files">
-                        <ul id="list">
-                            <p>Folder</p>
-                            <button id="noteFile1" onclick="openNote1()">Note-1</button>
-                            <button id="noteFile2" onclick="openNote2()"></button>
-                            <button id="noteFile3" onclick="openNote3()"></button>
-                            <button id="noteFile4" onclick="openNote4()"></button>
-                            <button id="noteFile5" onclick="openNote5()"></button>
-                            <button id="noteFile6" onclick="openNote6()"></button>
-                            <button id="noteFile7" onclick="openNote7()"></button>
-                            <button id="noteFile8" onclick="openNote8()"></button>
-                        </ul>
-                        </div>
-                        <button onclick="onInitClick()" id="newNote"><img src="./src/assets/icons/images.png">Add new note</button>
+                        <hr id="searchSection">
+                        <section class="files">
+                            <div id="files">
+                            <ul id="list">
+                                <p>Folder</p>
+                                <button id="noteFile1" onclick="openNote1()">Note-1</button>
+                                <button id="noteFile2" onclick="openNote2()"></button>
+                                <button id="noteFile3" onclick="openNote3()"></button>
+                                <button id="noteFile4" onclick="openNote4()"></button>
+                                <button id="noteFile5" onclick="openNote5()"></button>
+                                <button id="noteFile6" onclick="openNote6()"></button>
+                                <button id="noteFile7" onclick="openNote7()"></button>
+                                <button id="noteFile8" onclick="openNote8()"></button>
+                            </ul>
+                            </div>
+                            <button onclick="onInitClick()" id="newNote"><img src="./src/assets/icons/images.png">Add new note</button>
+                        </section>
                     </ul>
                 </div>
+            </section>
+            <section class="settingsSection">
+                <hr>
+                <li class="sideBalkSettings" onclick="openSettings()">
+                    <img src="./src/assets/icons/settings.png">
+                    <div>Settings</div>
+                </li>
             </section>
 
             <section class="middenstuk">
@@ -71,6 +82,16 @@
                     <textarea name="TextareaNote-8" id="inactive" style="display: none;">Welkom bij je achtste notitie!</textarea>
                 </section>
             </section>
+        </section>
+
+        <section class="settings" id="settings" style="display: none;">
+            <div class="topbar">
+                <h5>settings</h5>
+                <button onclick="closeSettings()">x</button>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
         </section>
     </body>
 </html>

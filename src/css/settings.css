@@ -1,0 +1,39 @@
+.settings{
+    z-index: 9999;
+    position: fixed;
+    background-color: #fff;
+    border: solid 1px black;
+    top: 2vh;
+    left: 1vw;
+    height: 96vh;
+    width: 98vw;
+}
+.settings .topbar{
+    display: flex;
+    position: fixed;
+    height: 26px;
+    width: 98vw;
+}
+.settings .topbar h5{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: .5vh;
+    margin-left: 10px;
+    cursor: default;
+}
+.settings .topbar button{
+    margin-left: auto;
+    border: none;
+    height: 26px;
+    width: 45px;
+    font-size: larger;
+}
+.settings .topbar button:hover{
+    transition: .2s;
+    background-color: rgb(221, 39, 39);
+    cursor: pointer;
+}
+.settings .hr hr{
+    width: 100%;
+    margin-top: 25px;
+}

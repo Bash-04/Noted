@@ -9,6 +9,7 @@
     min-width: 0px;
     width: 230px;
     max-width: 100%;
+    max-height: 100%;
     border-right: 1px solid #00000033;
 }
 .sidebalk #profile{
@@ -52,7 +53,7 @@
     font-size: smaller;
     font-weight: 500;
 }
-.sidebalk #sidemap hr{
+.sidebalk #sidemap #searchSection{
     background-color: var(--darkgray);
     color: var(--darkgray);
     margin-top: 6px;
@@ -79,10 +80,14 @@
     width: 118px;
 }
 
-.sidebalk #files{
+.sidebalk .files{
+    height: 79vh;
+    max-height: 79vh;
     margin: 3px;
+    overflow-y: auto;
+    overflow-x: none;
 }
-.sidebalk #files ul button{
+.sidebalk .files ul button{
     font-size: 16px;
     padding: 1px;
     border: none;
@@ -90,13 +95,52 @@
     align-items: center;
     margin-left: 8px;
 }
-.sidebalk #files ul button:hover{
+.sidebalk .files ul button:hover{
     padding: 2px;
     border: none;
     display: flex;
     align-items: center;
     margin-left: 10px;
     margin-bottom: -2px;
+}
+
+.settingsSection{
+    display: block;
+    position: fixed;
+    z-index: 5;
+    margin-top: 93vh;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 220px;
+}
+.settingsSection hr{
+    background-color: var(--darkgray);
+    color: var(--darkgray);
+    height: .5px;
+}
+.sideBalkSettings{
+    cursor: pointer;
+    margin: 10px 3px 3px 3px;
+}
+.sideBalkSettings div{
+    margin-left: 6px;
+}
+.settingsSection li{
+    display: flex;
+    align-items: center;
+}
+.settingsSection li img{
+    width: 25px;
+    height: 25px;
+}
+.settingsSection li input{
+    height: 20px;
+    width: 150px;
+    border: 1px solid var(--darkgray);
+    border-radius: 4px;
+    color: var(--darkgray);
+    font-size: smaller;
+    font-weight: 500;
 }
 
 /*Navbalk*/

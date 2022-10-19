@@ -15,7 +15,7 @@ function onInitClick(){
     const newNote = note[i];
     i++;
     newNote.innerText = "Note-" + i;
-    newNote.setAttribute("id", "noteFile" + i)
+    newNote.setAttribute("id", "noteFile" + i);
     }
     else {
         alert("YOU HAVE THE MAXIMUM AMOUNT OF NOTES IN THIS FOLDER!");
