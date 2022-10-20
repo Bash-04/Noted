@@ -11,6 +11,7 @@
         <script src="./src/function/addNote.js"></script>
         <script src="./src/function/openNote.js"></script>
         <script src="./src/function/closeNote.js"></script>
+        <script src="./src/function/upload.js"></script>
         <script src="./src/function/settings.js"></script>
     </head>
     <body>
@@ -35,16 +36,28 @@
                             <ul id="list">
                                 <p>Folder</p>
                                 <button id="noteFile1" onclick="openNote1()">Note-1</button>
-                                <button id="noteFile2" onclick="openNote2()"></button>
-                                <button id="noteFile3" onclick="openNote3()"></button>
-                                <button id="noteFile4" onclick="openNote4()"></button>
-                                <button id="noteFile5" onclick="openNote5()"></button>
-                                <button id="noteFile6" onclick="openNote6()"></button>
-                                <button id="noteFile7" onclick="openNote7()"></button>
-                                <button id="noteFile8" onclick="openNote8()"></button>
+                                <button id="noteFile2" onclick="openNote2()" style="display: none;"></button>
+                                <button id="noteFile3" onclick="openNote3()" style="display: none;"></button>
+                                <button id="noteFile4" onclick="openNote4()" style="display: none;"></button>
+                                <button id="noteFile5" onclick="openNote5()" style="display: none;"></button>
+                                <button id="noteFile6" onclick="openNote6()" style="display: none;"></button>
+                                <button id="noteFile7" onclick="openNote7()" style="display: none;"></button>
+                                <button id="noteFile8" onclick="openNote8()" style="display: none;"></button>
                             </ul>
-                            </div>
                             <button onclick="onInitClick()" id="newNote"><img src="./src/assets/icons/images.png">Add new note</button>
+                            <ul id="listUpload">
+                                <p>Uploads</p>
+                                <button id="upload1" onclick="openNote1()" style="display: none;"></button>
+                                <button id="upload2" onclick="openNote2()" style="display: none;"></button>
+                                <button id="upload3" onclick="openNote3()" style="display: none;"></button>
+                                <button id="upload4" onclick="openNote4()" style="display: none;"></button>
+                                <button id="upload5" onclick="openNote5()" style="display: none;"></button>
+                                <button id="upload6" onclick="openNote6()" style="display: none;"></button>
+                                <button id="upload7" onclick="openNote7()" style="display: none;"></button>
+                                <button id="upload8" onclick="openNote8()" style="display: none;"></button>
+                            </ul>
+                            <button onclick="uploadFile()" id="uploadNote"><img src="./src/assets/icons/images.png">Upload .txt file</button>
+                            </div>
                         </section>
                     </ul>
                 </div>
@@ -84,14 +97,17 @@
             </section>
         </section>
 
-        <section class="settings" id="settings" style="display: none;">
+        <div class="settings" id="settings" style="display: none;">
             <div class="topbar">
-                <h5>settings</h5>
+                <h5>Settings</h5>
                 <button onclick="closeSettings()">x</button>
             </div>
             <div class="hr">
                 <hr>
             </div>
-        </section>
+            <div id="uploadFile">
+                <input type="file" accept=".txt">
+            </div>
+        </div>
     </body>
 </html>

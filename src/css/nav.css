@@ -104,6 +104,30 @@
     margin-bottom: -2px;
 }
 
+.sidebalk .files #listUpload{
+    margin-top: 8px;
+}
+.sidebalk #uploadNote{
+    padding: 3px;
+    margin-left: 10px;
+    margin-top: 3px;
+    height: 25px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.sidebalk #uploadNote img{
+    height: 15px;
+    width: 15px;
+    margin: 0px 6px -3px 0px;
+}
+.sidebalk #uploadNote:hover{
+    margin-top: 4px;
+    margin-left: 10px;
+    height: 24px;
+    width: 118px;
+}
+
 .settingsSection{
     display: block;
     position: fixed;
